@@ -101,9 +101,15 @@ const HeroSection = () => {
 
           {/* Earnings Ticker */}
           <div className="overflow-hidden whitespace-nowrap bg-white/5 rounded-full py-2 mb-8">
-            <div className="inline-block animate-bounce-subtle">
+            <div className="inline-block animate-[scroll_20s_linear_infinite]">
               {earnings.map((earning, index) => (
                 <span key={index} className="text-sm text-muted-foreground mx-8">
+                  💰 {earning}
+                </span>
+              ))}
+              {/* Duplicate for seamless loop */}
+              {earnings.map((earning, index) => (
+                <span key={`duplicate-${index}`} className="text-sm text-muted-foreground mx-8">
                   💰 {earning}
                 </span>
               ))}
