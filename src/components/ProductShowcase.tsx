@@ -62,7 +62,7 @@ const ProductShowcase = () => {
 
         {/* Auto-scrolling product carousel */}
         <div className="relative overflow-hidden">
-          <div className="flex animate-bounce-subtle space-x-6">
+          <div className="flex animate-scroll space-x-6">
             {[...products, ...products].map((product, index) => (
               <div 
                 key={`${product.id}-${index}`}
