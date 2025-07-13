@@ -18,7 +18,7 @@ const FinalCTA = () => {
 
       <div className="container mx-auto text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">Turn Your Influence Into Income Effortlessly</h2>
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 whitespace-nowrap">Turn Your Influence Into Income Effortlessly</h2>
           <p className="text-xl md:text-2xl mb-8 opacity-90">
             Join creators earning 3-5X more with AI-optimized links
           </p>
