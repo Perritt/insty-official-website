@@ -1,9 +1,6 @@
-import { useState, useEffect } from "react";
 import { Star } from "lucide-react";
 
 const TestimonialsSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
   const testimonials = [
     {
       name: "MakeupByJenna",
@@ -88,15 +85,6 @@ const TestimonialsSection = () => {
     }
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % Math.ceil(testimonials.length / 3));
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const visibleTestimonials = testimonials.slice(currentIndex * 3, (currentIndex * 3) + 3);
-
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-transparent to-orange-50/30">
       <div className="container mx-auto">
@@ -109,59 +97,47 @@ const TestimonialsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
-          {visibleTestimonials.map((testimonial, index) => (
-            <div 
-              key={`${currentIndex}-${index}`}
-              className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 animate-fade-in"
-            >
-              <div className="flex items-center mb-4">
-                <img 
-                  src={testimonial.avatar} 
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full border-2 border-pink-300 mr-4"
-                />
-                <div>
-                  <h4 className="font-semibold">@{testimonial.name}</h4>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+        {/* Auto-scrolling testimonials carousel */}
+        <div className="relative overflow-hidden">
+          <div className="flex animate-scroll space-x-6">
+            {[...testimonials, ...testimonials].map((testimonial, index) => (
+              <div 
+                key={`${testimonial.name}-${index}`}
+                className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 flex-shrink-0 w-80"
+              >
+                <div className="flex items-center mb-4">
+                  <img 
+                    src={testimonial.avatar} 
+                    alt={testimonial.name}
+                    className="w-12 h-12 rounded-full border-2 border-pink-300 mr-4"
+                  />
+                  <div>
+                    <h4 className="font-semibold">@{testimonial.name}</h4>
+                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                  ))}
+                </div>
+
+                <blockquote className="text-sm mb-4 italic">
+                  "{testimonial.quote}"
+                </blockquote>
+
+                <div className="flex justify-between items-center">
+                  <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">
+                    {testimonial.highlight}
+                  </span>
+                  <span className="text-sm font-bold text-green-600">
+                    {testimonial.earnings}
+                  </span>
                 </div>
               </div>
-
-              <div className="flex items-center mb-3">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                ))}
-              </div>
-
-              <blockquote className="text-sm mb-4 italic">
-                "{testimonial.quote}"
-              </blockquote>
-
-              <div className="flex justify-between items-center">
-                <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">
-                  {testimonial.highlight}
-                </span>
-                <span className="text-sm font-bold text-green-600">
-                  {testimonial.earnings}
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Pagination dots */}
-        <div className="flex justify-center space-x-2">
-          {Array.from({ length: Math.ceil(testimonials.length / 3) }).map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full transition-colors ${
-                index === currentIndex 
-                  ? 'bg-primary' 
-                  : 'bg-gray-300 hover:bg-gray-400'
-              }`}
-            />
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
