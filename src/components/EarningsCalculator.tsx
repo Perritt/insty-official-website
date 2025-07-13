@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DollarSign, MousePointer, ShoppingCart, TrendingUp } from "lucide-react";
 
 const EarningsCalculator = () => {
-  const [followers, setFollowers] = useState([10000]);
+  const [followers, setFollowers] = useState([50000]);
   const [clickRate, setClickRate] = useState([3]);
   const [orderValue, setOrderValue] = useState([50]);
 
