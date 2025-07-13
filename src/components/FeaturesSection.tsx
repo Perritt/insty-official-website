@@ -41,8 +41,7 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="group glass-card p-8 rounded-3xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 float-animation"
-              style={{ animationDelay: `${index * 0.2}s` }}
+              className="group glass-card p-8 rounded-3xl hover:scale-105 hover:-translate-y-2 transition-all duration-300"
             >
               <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${feature.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
                 <feature.icon className="w-8 h-8 text-white" />
