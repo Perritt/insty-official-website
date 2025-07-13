@@ -9,7 +9,7 @@ const EarningsCalculator = () => {
   const monthlyClicks = Math.round(followers[0] * clickRate[0] / 100);
   const monthlySales = Math.round(monthlyClicks * 0.1); // 10% conversion rate
   const revenueGenerated = monthlySales * orderValue[0];
-  const estimatedEarnings = Math.round(revenueGenerated * 0.1); // 10% commission
+  const estimatedEarnings = Math.round(revenueGenerated * 0.2); // 20% commission
 
   return <section id="calculator" className="py-20 px-4 bg-gradient-to-b from-transparent to-red-50/30">
       <div className="container mx-auto max-w-4xl">
