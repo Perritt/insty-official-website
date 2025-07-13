@@ -1,4 +1,4 @@
-import { UserPlus, Palette, Plus, Share2 } from "lucide-react";
+import { UserPlus, Palette, Plus, Share2, ArrowRight } from "lucide-react";
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer } from 'recharts';
 
 const HowItWorksSection = () => {
@@ -55,25 +55,26 @@ const HowItWorksSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-8 mb-16">
+        <div className="flex items-center justify-center mb-16">
           {steps.map((step, index) => (
-            <div 
-              key={index}
-              className="text-center group hover:scale-110 transition-all duration-300"
-            >
-              <div className="relative mb-6">
-                <div className={`w-20 h-20 mx-auto rounded-full bg-gradient-to-r ${step.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                  <step.icon className="w-10 h-10 text-white" />
+            <div key={index} className="flex items-center">
+              <div className="text-center group hover:scale-110 transition-all duration-300">
+                <div className="relative mb-6">
+                  <div className={`w-20 h-20 mx-auto rounded-full bg-gradient-to-r ${step.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                    <step.icon className="w-10 h-10 text-white" />
+                  </div>
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center border-2 border-gray-200 group-hover:border-primary transition-colors">
-                  <span className="text-sm font-bold text-gray-600 group-hover:text-primary">
-                    {step.number}
-                  </span>
-                </div>
+                
+                <h3 className="text-xl font-bold mb-3">{step.title}</h3>
+                <p className="text-muted-foreground text-sm max-w-xs">{step.description}</p>
               </div>
               
-              <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-              <p className="text-muted-foreground text-sm">{step.description}</p>
+              {/* Arrow between steps */}
+              {index < steps.length - 1 && (
+                <div className="mx-8 hidden md:block">
+                  <ArrowRight className="w-8 h-8 text-primary animate-pulse" />
+                </div>
+              )}
             </div>
           ))}
         </div>
