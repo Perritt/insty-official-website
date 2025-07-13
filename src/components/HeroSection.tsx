@@ -66,8 +66,8 @@ const HeroSection = () => {
 
           {/* URL Input */}
           <div className="max-w-md mx-auto mb-8 animate-slide-up">
-            <div className="flex items-center glass-card rounded-full p-2">
-              <span className="text-muted-foreground px-3">insty.cc/</span>
+            <div className="flex items-center glass-card rounded-full p-2 gap-2">
+              <span className="text-muted-foreground px-3 shrink-0">insty.cc/</span>
               <Input
                 value={username}
                 onChange={(e) => {
@@ -75,9 +75,9 @@ const HeroSection = () => {
                   setIsTyping(false);
                 }}
                 placeholder={username ? "" : typewriterText}
-                className="border-0 bg-transparent text-center flex-1 typewriter"
+                className="border-0 bg-transparent text-center flex-1 min-w-0 typewriter"
               />
-              <Button className="gradient-button rounded-full px-6">
+              <Button className="gradient-button rounded-full px-6 shrink-0">
                 Start
               </Button>
             </div>
