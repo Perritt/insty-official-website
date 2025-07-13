@@ -9,6 +9,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import FAQSection from "@/components/FAQSection";
 import BrandShowcase from "@/components/BrandShowcase";
+import BrandPartnership from "@/components/BrandPartnership";
 import FinalCTA from "@/components/FinalCTA";
 import FloatingCTA from "@/components/FloatingCTA";
 import Footer from "@/components/Footer";
@@ -27,6 +28,7 @@ const Index = () => {
         <AIShowcaseSection />
       </div>
       <ProductShowcase />
+      <BrandPartnership />
       <div id="calculator">
         <EarningsCalculator />
       </div>
