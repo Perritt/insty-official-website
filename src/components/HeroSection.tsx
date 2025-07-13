@@ -3,37 +3,43 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { CheckCircle, ShoppingCart, Zap, Brain, DollarSign } from "lucide-react";
 import { useTypewriter } from "@/hooks/useTypewriter";
-
 const HeroSection = () => {
   const [username, setUsername] = useState("");
-  
   const realNames = ["sarah", "mike", "alex", "jenny", "david", "emma", "james", "lisa"];
-  const { text: typewriterText, isTyping, setIsTyping } = useTypewriter({
+  const {
+    text: typewriterText,
+    isTyping,
+    setIsTyping
+  } = useTypewriter({
     words: realNames,
     loop: true,
     delayBetweenWords: 1500,
     typeSpeed: 150,
-    deleteSpeed: 100,
+    deleteSpeed: 100
   });
-
-  const advantages = [
-    { icon: CheckCircle, text: "Forever Free", color: "text-green-500" },
-    { icon: ShoppingCart, text: "20K+ High-Commission Products", color: "text-blue-500" },
-    { icon: Zap, text: "1-Click AI Storefront", color: "text-yellow-500" },
-    { icon: Brain, text: "Smart Product Picks", color: "text-purple-500" },
-    { icon: DollarSign, text: "Fast Payouts", color: "text-green-600" }
-  ];
-
-  const earnings = [
-    "@MiniTraveler just earned $82.40",
-    "@TechReviewer earned $156.20",
-    "@FoodieBlogger made $94.80",
-    "@FitnessGuru earned $127.60",
-    "@BeautyInfluencer made $203.50"
-  ];
-
-  return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 pt-20">
+  const advantages = [{
+    icon: CheckCircle,
+    text: "Forever Free",
+    color: "text-green-500"
+  }, {
+    icon: ShoppingCart,
+    text: "20K+ High-Commission Products",
+    color: "text-blue-500"
+  }, {
+    icon: Zap,
+    text: "1-Click AI Storefront",
+    color: "text-yellow-500"
+  }, {
+    icon: Brain,
+    text: "Smart Product Picks",
+    color: "text-purple-500"
+  }, {
+    icon: DollarSign,
+    text: "Fast Payouts",
+    color: "text-green-600"
+  }];
+  const earnings = ["@MiniTraveler just earned $82.40", "@TechReviewer earned $156.20", "@FoodieBlogger made $94.80", "@FitnessGuru earned $127.60", "@BeautyInfluencer made $203.50"];
+  return <section className="relative min-h-screen flex items-center justify-center px-4 pt-20">
       {/* Animated Background */}
       <div className="absolute inset-0 gradient-animate opacity-10"></div>
       
@@ -56,27 +62,20 @@ const HeroSection = () => {
 
           {/* Advantages Grid */}
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8 animate-fade-in">
-            {advantages.map((advantage, index) => (
-              <div key={index} className="glass-card p-4 rounded-xl hover:scale-105 transition-transform">
+            {advantages.map((advantage, index) => <div key={index} className="glass-card p-4 rounded-xl hover:scale-105 transition-transform">
                 <advantage.icon className={`w-6 h-6 ${advantage.color} mx-auto mb-2`} />
                 <p className="text-sm font-medium">{advantage.text}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
 
           {/* URL Input */}
           <div className="max-w-md mx-auto mb-8 animate-slide-up">
             <div className="flex items-center glass-card rounded-full p-2 gap-2">
               <span className="text-muted-foreground px-3 shrink-0">insty.cc/</span>
-              <Input
-                value={username}
-                onChange={(e) => {
-                  setUsername(e.target.value);
-                  setIsTyping(false);
-                }}
-                placeholder={username ? "" : typewriterText}
-                className="border-0 bg-transparent text-center flex-1 min-w-0 typewriter"
-              />
+              <Input value={username} onChange={e => {
+              setUsername(e.target.value);
+              setIsTyping(false);
+            }} placeholder={username ? "" : typewriterText} className="border-0 bg-transparent text-center flex-1 min-w-0 typewriter" />
               <Button className="gradient-button rounded-full px-6 shrink-0">
                 Start
               </Button>
@@ -86,7 +85,7 @@ const HeroSection = () => {
           {/* Trust Elements */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 animate-fade-in">
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary">50,000+</div>
+              <div className="text-3xl font-bold text-primary">10,000+</div>
               <div className="text-muted-foreground">Active Creators</div>
             </div>
             <div className="text-center">
@@ -102,23 +101,17 @@ const HeroSection = () => {
           {/* Earnings Ticker */}
           <div className="overflow-hidden whitespace-nowrap bg-white/5 rounded-full py-2 mb-8">
             <div className="inline-block animate-[scroll_20s_linear_infinite]">
-              {earnings.map((earning, index) => (
-                <span key={index} className="text-sm text-muted-foreground mx-8">
+              {earnings.map((earning, index) => <span key={index} className="text-sm text-muted-foreground mx-8">
                   💰 {earning}
-                </span>
-              ))}
+                </span>)}
               {/* Duplicate for seamless loop */}
-              {earnings.map((earning, index) => (
-                <span key={`duplicate-${index}`} className="text-sm text-muted-foreground mx-8">
+              {earnings.map((earning, index) => <span key={`duplicate-${index}`} className="text-sm text-muted-foreground mx-8">
                   💰 {earning}
-                </span>
-              ))}
+                </span>)}
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
