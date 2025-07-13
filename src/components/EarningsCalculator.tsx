@@ -2,19 +2,16 @@ import { useState } from "react";
 import { Slider } from "@/components/ui/slider";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DollarSign, MousePointer, ShoppingCart, TrendingUp } from "lucide-react";
-
 const EarningsCalculator = () => {
   const [followers, setFollowers] = useState([50000]);
   const [clickRate, setClickRate] = useState([3]);
   const [orderValue, setOrderValue] = useState([50]);
-
-  const monthlyClicks = Math.round((followers[0] * clickRate[0]) / 100);
+  const monthlyClicks = Math.round(followers[0] * clickRate[0] / 100);
   const monthlySales = Math.round(monthlyClicks * 0.1); // 10% conversion rate
   const revenueGenerated = monthlySales * orderValue[0];
   const estimatedEarnings = Math.round(revenueGenerated * 0.1); // 10% commission
 
-  return (
-    <section id="calculator" className="py-20 px-4 bg-gradient-to-b from-transparent to-red-50/30">
+  return <section id="calculator" className="py-20 px-4 bg-gradient-to-b from-transparent to-red-50/30">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
@@ -38,14 +35,7 @@ const EarningsCalculator = () => {
                   <label className="font-medium">Number of Followers</label>
                   <span className="text-primary font-bold">{followers[0].toLocaleString()}</span>
                 </div>
-                <Slider
-                  value={followers}
-                  onValueChange={setFollowers}
-                  max={1000000}
-                  min={1000}
-                  step={1000}
-                  className="w-full"
-                />
+                <Slider value={followers} onValueChange={setFollowers} max={1000000} min={1000} step={1000} className="w-full" />
                 <div className="flex justify-between text-xs text-muted-foreground mt-1">
                   <span>1K</span>
                   <span>1M</span>
@@ -58,14 +48,7 @@ const EarningsCalculator = () => {
                   <label className="font-medium">Average Click Rate (%)</label>
                   <span className="text-primary font-bold">{clickRate[0]}%</span>
                 </div>
-                <Slider
-                  value={clickRate}
-                  onValueChange={setClickRate}
-                  max={10}
-                  min={1}
-                  step={0.5}
-                  className="w-full"
-                />
+                <Slider value={clickRate} onValueChange={setClickRate} max={10} min={1} step={0.5} className="w-full" />
                 <div className="flex justify-between text-xs text-muted-foreground mt-1">
                   <span>1%</span>
                   <span>10%</span>
@@ -78,14 +61,7 @@ const EarningsCalculator = () => {
                   <label className="font-medium">Average Order Value ($)</label>
                   <span className="text-primary font-bold">${orderValue[0]}</span>
                 </div>
-                <Slider
-                  value={orderValue}
-                  onValueChange={setOrderValue}
-                  max={200}
-                  min={10}
-                  step={5}
-                  className="w-full"
-                />
+                <Slider value={orderValue} onValueChange={setOrderValue} max={200} min={10} step={5} className="w-full" />
                 <div className="flex justify-between text-xs text-muted-foreground mt-1">
                   <span>$10</span>
                   <span>$200</span>
@@ -105,9 +81,7 @@ const EarningsCalculator = () => {
                     <div className="text-3xl font-bold text-green-600">
                       ${estimatedEarnings.toLocaleString()}
                     </div>
-                    <div className="text-xs text-muted-foreground">
-                      (Based on 10% Amazon commission rate)
-                    </div>
+                    <div className="text-xs text-muted-foreground">(Based on 20% Amazon commission rate)</div>
                   </div>
                 </div>
               </CardContent>
@@ -156,8 +130,6 @@ const EarningsCalculator = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default EarningsCalculator;
