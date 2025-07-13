@@ -17,7 +17,7 @@ const FloatingCTA = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-r from-orange-500 to-red-500 text-white p-4 shadow-2xl">
+    <div className="fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-r from-orange-500 to-red-500 text-white py-2 px-4 shadow-2xl">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-3">
           <span className="text-lg">🚀</span>
