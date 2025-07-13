@@ -1,12 +1,40 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
+import AIShowcaseSection from "@/components/AIShowcaseSection";
+import ProductShowcase from "@/components/ProductShowcase";
+import EarningsCalculator from "@/components/EarningsCalculator";
+import ComparisonSection from "@/components/ComparisonSection";
+import FeaturesSection from "@/components/FeaturesSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import HowItWorksSection from "@/components/HowItWorksSection";
+import FAQSection from "@/components/FAQSection";
+import BrandShowcase from "@/components/BrandShowcase";
+import FinalCTA from "@/components/FinalCTA";
+import FloatingCTA from "@/components/FloatingCTA";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-background relative">
+      {/* Particle background */}
+      <div className="particles-bg">
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-50/20 via-transparent to-red-50/20"></div>
       </div>
+      
+      <Header />
+      <HeroSection />
+      <AIShowcaseSection />
+      <ProductShowcase />
+      <EarningsCalculator />
+      <ComparisonSection />
+      <FeaturesSection />
+      <TestimonialsSection />
+      <HowItWorksSection />
+      <FAQSection />
+      <BrandShowcase />
+      <FinalCTA />
+      <Footer />
+      <FloatingCTA />
     </div>
   );
 };

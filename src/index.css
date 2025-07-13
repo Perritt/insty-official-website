@@ -17,26 +17,42 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Insty brand colors - orange to red gradient */
+    --primary: 15 100% 60%; /* Orange */
+    --primary-foreground: 0 0% 100%;
+    --primary-gradient: linear-gradient(135deg, hsl(25 100% 65%), hsl(0 100% 65%));
+    
+    --secondary: 25 100% 95%;
+    --secondary-foreground: 15 100% 40%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 20 30% 96%;
+    --muted-foreground: 20 10% 45%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 15 100% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 20 20% 90%;
+    --input: 20 20% 90%;
+    --ring: 15 100% 60%;
 
-    --radius: 0.5rem;
+    /* Glass morphism effects */
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+
+    /* Gradient backgrounds */
+    --gradient-primary: linear-gradient(135deg, hsl(25 100% 65%) 0%, hsl(0 100% 65%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(25 100% 95%) 0%, hsl(0 100% 95%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(25 100% 65%) 0%, hsl(0 100% 65%) 50%, hsl(340 100% 70%) 100%);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +116,75 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
   }
+}
+
+@layer components {
+  /* Glass morphism card */
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+    box-shadow: var(--glass-shadow);
+  }
+
+  /* Gradient button */
+  .gradient-button {
+    background: var(--gradient-primary);
+    @apply text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg;
+  }
+
+  /* Floating animation */
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Pulse animation */
+  .pulse-ring {
+    @apply absolute inset-0 rounded-full border-2 border-primary/30;
+    animation: pulse-ring 2s infinite;
+  }
+
+  /* Typewriter effect */
+  .typewriter {
+    border-right: 2px solid hsl(var(--primary));
+    animation: typewriter-blink 1s infinite;
+  }
+
+  /* Particle background */
+  .particles-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+@keyframes typewriter-blink {
+  0%, 50% { border-color: hsl(var(--primary)); }
+  51%, 100% { border-color: transparent; }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-animate {
+  background: linear-gradient(-45deg, hsl(25 100% 65%), hsl(0 100% 65%), hsl(340 100% 70%), hsl(15 100% 60%));
+  background-size: 400% 400%;
+  animation: gradient-shift 3s ease infinite;
 }
