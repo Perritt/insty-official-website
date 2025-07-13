@@ -7,9 +7,9 @@ import { useTypewriter } from "@/hooks/useTypewriter";
 const HeroSection = () => {
   const [username, setUsername] = useState("");
   
-  const placeholders = ["yourname", "creator", "influencer", "artist"];
+  const realNames = ["sarah", "mike", "alex", "jenny", "david", "emma", "james", "lisa"];
   const { text: typewriterText, isTyping, setIsTyping } = useTypewriter({
-    words: placeholders,
+    words: realNames,
     loop: true,
     delayBetweenWords: 1500,
     typeSpeed: 150,
