@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp, Target, Clock } from "lucide-react";
+import beautyBloggerAvatar from "@/assets/beauty-blogger-lisa.jpg";
 
 const AIShowcaseSection = () => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -62,7 +63,7 @@ const AIShowcaseSection = () => {
               </p>
               <div className="flex items-center">
                 <img 
-                  src="https://images.unsplash.com/photo-1494790108755-2616b612b5bb?w=40&h=40&fit=crop&crop=face" 
+                  src={beautyBloggerAvatar} 
                   alt="Lisa" 
                   className="w-10 h-10 rounded-full border-2 border-pink-300 mr-3"
                 />
