@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -106,11 +107,15 @@ const TestimonialsSection = () => {
                 className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 flex-shrink-0 w-80"
               >
                 <div className="flex items-center mb-4">
-                  <img 
-                    src={testimonial.avatar} 
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full border-2 border-pink-300 mr-4"
-                  />
+                  <Avatar className="w-12 h-12 border-2 border-pink-300 mr-4">
+                    <AvatarImage 
+                      src={testimonial.avatar} 
+                      alt={testimonial.name}
+                    />
+                    <AvatarFallback className="bg-primary/10 text-primary font-semibold">
+                      {testimonial.name.slice(0, 2).toUpperCase()}
+                    </AvatarFallback>
+                  </Avatar>
                   <div>
                     <h4 className="font-semibold">@{testimonial.name}</h4>
                     <p className="text-sm text-muted-foreground">{testimonial.role}</p>
