@@ -112,8 +112,12 @@ const TestimonialsSection = () => {
                       src={testimonial.avatar} 
                       alt={testimonial.name}
                     />
-                    <AvatarFallback className="bg-primary/10 text-primary font-semibold">
-                      {testimonial.name.slice(0, 2).toUpperCase()}
+                    <AvatarFallback className="p-0">
+                      <img 
+                        src={`https://api.dicebear.com/7.x/personas/svg?seed=${testimonial.name}&backgroundColor=f1f5f9&hair=short01,short02,short03&accessories=glasses01,glasses02&clothing=shirt01,shirt02&eyes=variant01,variant02&mouth=smile01,smile02`}
+                        alt={`Generated avatar for ${testimonial.name}`}
+                        className="w-full h-full object-cover"
+                      />
                     </AvatarFallback>
                   </Avatar>
                   <div>
