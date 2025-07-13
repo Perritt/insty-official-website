@@ -33,7 +33,7 @@ const BrandPartnership = () => {
               key={index}
               className="group cursor-pointer"
             >
-              <div className="w-20 h-20 rounded-full bg-white shadow-lg border border-gray-100 flex items-center justify-center p-4 group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
+              <div className="w-32 h-32 rounded-full bg-white shadow-lg border border-gray-100 flex items-center justify-center p-6 group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
                 <img 
                   src={brand.logo} 
                   alt={`${brand.name} logo`}
