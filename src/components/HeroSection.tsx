@@ -1,24 +1,20 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { CheckCircle, ShoppingCart, Zap, Brain, DollarSign } from "lucide-react";
+import { useTypewriter } from "@/hooks/useTypewriter";
 
 const HeroSection = () => {
   const [username, setUsername] = useState("");
-  const [placeholder, setPlaceholder] = useState("yourname");
-  const [isTyping, setIsTyping] = useState(true);
-
+  
   const placeholders = ["yourname", "creator", "influencer", "artist"];
-  const [placeholderIndex, setPlaceholderIndex] = useState(0);
-
-  useEffect(() => {
-    if (!username && isTyping) {
-      const interval = setInterval(() => {
-        setPlaceholderIndex((prev) => (prev + 1) % placeholders.length);
-      }, 2000);
-      return () => clearInterval(interval);
-    }
-  }, [username, isTyping]);
+  const { text: typewriterText, isTyping, setIsTyping } = useTypewriter({
+    words: placeholders,
+    loop: true,
+    delayBetweenWords: 1500,
+    typeSpeed: 150,
+    deleteSpeed: 100,
+  });
 
   const advantages = [
     { icon: CheckCircle, text: "Forever Free", color: "text-green-500" },
@@ -78,7 +74,7 @@ const HeroSection = () => {
                   setUsername(e.target.value);
                   setIsTyping(false);
                 }}
-                placeholder={username ? "" : placeholders[placeholderIndex]}
+                placeholder={username ? "" : typewriterText}
                 className="border-0 bg-transparent text-center flex-1 typewriter"
               />
               <Button className="gradient-button rounded-full px-6">
