@@ -1,54 +1,43 @@
 import { Check, X } from "lucide-react";
-
 const ComparisonSection = () => {
-  const features = [
-    {
-      feature: "Pricing",
-      insty: "🚫 Free Forever",
-      competitors: "Paid Plans",
-      instyHas: true,
-      competitorsHave: false
-    },
-    {
-      feature: "Product Catalog",
-      insty: "🛒 20,000+ High-Commission Items",
-      competitors: "Limited Selections",
-      instyHas: true,
-      competitorsHave: false
-    },
-    {
-      feature: "Setup Time",
-      insty: "⚡ 1-Click AI Storefront",
-      competitors: "Manual Curation",
-      instyHas: true,
-      competitorsHave: false
-    },
-    {
-      feature: "Smart Matching",
-      insty: "🤖 AI Recommends Best Products",
-      competitors: "Generic Links",
-      instyHas: true,
-      competitorsHave: false
-    },
-    {
-      feature: "Earnings",
-      insty: "💸 Up to 30% Commissions",
-      competitors: "5-10% Typical",
-      instyHas: true,
-      competitorsHave: false
-    }
-  ];
-
-  return (
-    <section className="py-20 px-4 bg-gradient-to-b from-red-50/30 to-transparent">
+  const features = [{
+    feature: "Pricing",
+    insty: "🚫 Free Forever",
+    competitors: "Paid Plans",
+    instyHas: true,
+    competitorsHave: false
+  }, {
+    feature: "Product Catalog",
+    insty: "🛒 20,000+ High-Commission Items",
+    competitors: "Limited Selections",
+    instyHas: true,
+    competitorsHave: false
+  }, {
+    feature: "Setup Time",
+    insty: "⚡ 1-Click AI Storefront",
+    competitors: "Manual Curation",
+    instyHas: true,
+    competitorsHave: false
+  }, {
+    feature: "Smart Matching",
+    insty: "🤖 AI Recommends Best Products",
+    competitors: "Generic Links",
+    instyHas: true,
+    competitorsHave: false
+  }, {
+    feature: "Earnings",
+    insty: "💸 Up to 30% Commissions",
+    competitors: "5-10% Typical",
+    instyHas: true,
+    competitorsHave: false
+  }];
+  return <section className="py-20 px-4 bg-gradient-to-b from-red-50/30 to-transparent">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
             Why Insty Outperforms Other Bio Link Tools
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Discover how Insty.cc helps creators maximize their earnings with our AI-powered platform
-          </p>
+          <p className="text-lg text-muted-foreground">Discover how Insty helps creators maximize their earnings with our AI-powered platform</p>
         </div>
 
         <div className="glass-card rounded-3xl overflow-hidden">
@@ -62,8 +51,7 @@ const ComparisonSection = () => {
                 </tr>
               </thead>
               <tbody>
-                {features.map((item, index) => (
-                  <tr key={index} className={`border-b border-white/10 ${index % 2 === 0 ? 'bg-white/5' : 'bg-transparent'}`}>
+                {features.map((item, index) => <tr key={index} className={`border-b border-white/10 ${index % 2 === 0 ? 'bg-white/5' : 'bg-transparent'}`}>
                     <td className="p-6 font-medium">{item.feature}</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center space-x-2">
@@ -77,8 +65,7 @@ const ComparisonSection = () => {
                         <span className="text-sm text-muted-foreground">{item.competitors}</span>
                       </div>
                     </td>
-                  </tr>
-                ))}
+                  </tr>)}
               </tbody>
             </table>
           </div>
@@ -93,8 +80,6 @@ const ComparisonSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ComparisonSection;
