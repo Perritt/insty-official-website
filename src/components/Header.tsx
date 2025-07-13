@@ -16,12 +16,18 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <Link to="#features" className="text-foreground hover:text-primary transition-colors">
+            <a href="#features" className="text-foreground hover:text-primary transition-colors">
               Features
-            </Link>
-            <Link to="#calculator" className="text-foreground hover:text-primary transition-colors">
+            </a>
+            <a href="#calculator" className="text-foreground hover:text-primary transition-colors">
               Calculator
-            </Link>
+            </a>
+            <a href="#how-it-works" className="text-foreground hover:text-primary transition-colors">
+              How it works
+            </a>
+            <a href="#faq" className="text-foreground hover:text-primary transition-colors">
+              FAQ
+            </a>
           </nav>
 
           {/* CTA Buttons */}
