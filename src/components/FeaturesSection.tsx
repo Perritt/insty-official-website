@@ -48,7 +48,11 @@ const FeaturesSection = () => {
               </div>
               
               <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
+              <p className="text-muted-foreground leading-relaxed">
+                {feature.title === "Zero-Friction Payments" 
+                  ? "Get paid automatically via PayPal. No waiting weeks for approvals."
+                  : feature.description}
+              </p>
               
               {/* Hover effect background */}
               <div className="absolute inset-0 bg-gradient-to-r from-orange-500/5 to-red-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity -z-10"></div>
