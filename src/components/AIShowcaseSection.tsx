@@ -17,7 +17,7 @@ const AIShowcaseSection = () => {
           {/* Content */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 pb-2 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
                 AI-Powered Smart Storefront
               </h2>
               <p className="text-lg text-muted-foreground mb-8">

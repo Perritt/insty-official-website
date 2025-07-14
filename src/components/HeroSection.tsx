@@ -47,7 +47,7 @@ const HeroSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Main Headlines */}
           <div className="mb-8">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent animate-fade-in">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 pb-2 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent animate-fade-in">
               Free Bio Link. Smart Storefront. Real Income
             </h1>
             <div className="text-xl md:text-2xl text-muted-foreground mb-4 animate-slide-up">

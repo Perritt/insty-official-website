@@ -77,7 +77,7 @@ const TestimonialsSection = () => {
   return <section className="py-20 px-4 bg-gradient-to-b from-transparent to-orange-50/30">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Join 100K+ Creators Earning with Insty</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 pb-2 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Join 100K+ Creators Earning with Insty</h2>
           <p className="text-lg text-muted-foreground">
             See what real creators are saying about their success with Insty.cc
           </p>

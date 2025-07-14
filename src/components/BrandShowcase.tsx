@@ -10,7 +10,7 @@ const BrandShowcase = () => {
     <section className="py-20 px-4 bg-gradient-to-b from-transparent to-red-50/30">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 pb-2 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
             Trusted by creators and brands worldwide
           </h2>
         </div>

@@ -14,7 +14,7 @@ const EarningsCalculator = () => {
   return <section id="calculator" className="py-20 px-4 bg-gradient-to-b from-transparent to-red-50/30">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 pb-2 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
             Calculate Your Potential Earnings
           </h2>
           <p className="text-lg text-muted-foreground">

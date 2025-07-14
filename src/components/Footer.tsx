@@ -13,7 +13,7 @@ const Footer = () => {
                 alt="Insty.cc Logo" 
                 className="w-10 h-10"
               />
-              <h3 className="text-xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
+              <h3 className="text-xl font-bold pb-1 bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
                 Insty.cc
               </h3>
             </div>

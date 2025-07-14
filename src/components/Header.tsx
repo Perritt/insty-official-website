@@ -8,7 +8,7 @@ const Header = () => {
           <div className="flex items-center space-x-3">
             <img src="/lovable-uploads/144cce7c-5cf5-4f74-bc20-e904c873c359.png" alt="Insty.cc Logo" className="w-10 h-10" />
             <div className="hidden md:block">
-              <h1 className="text-lg font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+              <h1 className="text-lg font-bold pb-1 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
                 Insty <span className="text-xs font-normal text-muted-foreground/60">- AI-Powered Bio Links That Earn You Money</span>
               </h1>
             </div>
