@@ -83,7 +83,7 @@ const HeroSection = () => {
                     setIsTyping(false);
                   }} 
                   placeholder={username ? "" : `${typewriterText}${isTyping ? '|' : ''}`} 
-                  className="border-0 bg-transparent text-left flex-1 min-w-0 typewriter text-sm" 
+                  className="border-0 bg-transparent text-left flex-1 min-w-0 typewriter text-sm mr-3" 
                 />
                 <Button className="gradient-button rounded-full px-4 shrink-0 text-sm font-medium">
                   Start
