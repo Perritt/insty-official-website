@@ -10,9 +10,9 @@ const AboutUs = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-12 px-4">
+      <section className="pt-32 pb-8 px-4">
         <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-relaxed pb-2 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">The Bio Link That Pays You Back</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               It started with a simple frustration. Sarah, a beauty creator with 8,000 followers, was spending hours researching products to recommend to her audience, only to earn pennies from traditional affiliate programs.
@@ -22,9 +22,9 @@ const AboutUs = () => {
       </section>
 
       {/* Origin Story Section */}
-      <section className="py-12 px-4">
+      <section className="py-8 px-4">
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg mb-16">
+          <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg mb-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                 Meanwhile, her friend <strong className="text-foreground">Mike</strong>, a tech reviewer, watched his carefully curated product lists get buried in cluttered link-in-bio tools that looked more like spam than recommendations.
@@ -37,7 +37,7 @@ const AboutUs = () => {
           </div>
 
           {/* Why Insty Exists */}
-          <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg mb-16">
+          <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg mb-8">
             <h2 className="text-3xl font-bold mb-6 text-center text-foreground">Why Insty Exists</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
@@ -52,9 +52,9 @@ const AboutUs = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-16 px-4">
+      <section className="py-8 px-4">
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg mb-16">
+          <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg mb-8">
             <h2 className="text-3xl font-bold mb-8 text-center text-foreground">How Insty Changes the Game</h2>
             
             <div className="prose prose-lg max-w-none mb-8">
@@ -112,9 +112,9 @@ const AboutUs = () => {
       </section>
 
       {/* Success Stories Section */}
-      <section className="py-16 px-4">
+      <section className="py-8 px-4">
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg mb-16">
+          <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg mb-8">
             <h2 className="text-3xl font-bold mb-8 text-center text-foreground">From Side Hustle to Serious Income</h2>
             
             <div className="prose prose-lg max-w-none mb-8">
@@ -156,7 +156,7 @@ const AboutUs = () => {
       </section>
 
       {/* Testimonial Section */}
-      <section className="py-16 px-4">
+      <section className="py-8 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg text-center">
             <div className="max-w-2xl mx-auto">
@@ -173,7 +173,7 @@ const AboutUs = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="bg-card border border-border p-12 rounded-2xl shadow-lg">
             <h2 className="text-4xl font-bold mb-6 text-foreground">Join the free bio link revolution.</h2>
