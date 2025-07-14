@@ -10,27 +10,13 @@ const AboutUs = () => {
       <Header />
       
       {/* Hero Section */}
-      
-
-      {/* Story Section */}
-      <section className="py-12 px-4">
+      <section className="pt-32 pb-12 px-4">
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg">
-            <h2 className="text-3xl font-bold mb-8 text-center text-foreground">Our Story</h2>
-            
-            <div className="prose prose-lg max-w-none">
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                It all started with two creators, <strong className="text-foreground">Sarah</strong> and <strong className="text-foreground">Mike</strong>. Sarah had built a loyal following of 50,000 beauty enthusiasts on Instagram, while Mike's tech reviews on YouTube reached hundreds of thousands of viewers. Despite their success in creating engaging content, they both faced the same frustrating challenge: <em className="text-accent">how to monetize their influence without compromising their authenticity</em>.
-              </p>
-              
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Sarah tried promoting random products for quick commissions, but her audience noticed the disconnect. Mike spent countless hours researching products to recommend, but the manual process was exhausting and inconsistent. Both creators realized they needed a solution that could automatically match their content with high-quality, relevant products that their audience would genuinely love.
-              </p>
-              
-              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                That's when the idea for <strong className="text-primary">Insty.cc</strong> was born. We envisioned an AI-powered platform that could understand a creator's niche, analyze their audience's preferences, and automatically curate high-commission products that felt natural and authentic to promote.
-              </p>
-            </div>
+          <div className="text-center mb-12">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-relaxed pb-2 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Our Story</h1>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Empowering creators to turn their passion into sustainable income through AI-powered monetization
+            </p>
           </div>
         </div>
       </section>
