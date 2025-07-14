@@ -2,35 +2,31 @@ const BrandPartnership = () => {
   const brands = [
     {
       name: "Ulike",
-      logo: "/lovable-uploads/0a1af142-81ea-48cb-83b1-3faf570661cd.png"
+      logo: "/lovable-uploads/7ebdba90-25b7-45c1-8069-26fe467a65c3.png"
     },
     {
       name: "Bedsure", 
-      logo: "/lovable-uploads/13be0c64-7f7c-4835-8672-db9e77904401.png"
-    },
-    {
-      name: "Lovehoney",
-      logo: "/lovable-uploads/144cce7c-5cf5-4f74-bc20-e904c873c359.png"
-    },
-    {
-      name: "Gochifix",
-      logo: "/lovable-uploads/2f909d54-ba11-4ddd-bcbf-b05f22f7f063.png"
-    },
-    {
-      name: "Goli Nutrition",
       logo: "/lovable-uploads/55226dff-1140-4e79-88da-8c9d1845b201.png"
     },
     {
-      name: "MiraGoods",
-      logo: "/lovable-uploads/5ed25aaa-6541-4418-bf6f-264ae94e48ec.png"
+      name: "Lovehoney",
+      logo: "/lovable-uploads/2f909d54-ba11-4ddd-bcbf-b05f22f7f063.png"
     },
     {
-      name: "Auraglow",
+      name: "Gochifix",
+      logo: "/lovable-uploads/13be0c64-7f7c-4835-8672-db9e77904401.png"
+    },
+    {
+      name: "Goli Nutrition",
+      logo: "/lovable-uploads/144cce7c-5cf5-4f74-bc20-e904c873c359.png"
+    },
+    {
+      name: "MiraGoods",
       logo: "/lovable-uploads/743ea6d2-3fa9-4831-97e9-597dc7ad2ecd.png"
     },
     {
-      name: "Aquasonic",
-      logo: "/lovable-uploads/7ebdba90-25b7-45c1-8069-26fe467a65c3.png"
+      name: "Auraglow",
+      logo: "/lovable-uploads/bf81d54c-0768-4c5b-b4f0-fe597df63a25.png"
     },
     {
       name: "Aquasonic",
@@ -38,7 +34,7 @@ const BrandPartnership = () => {
     },
     {
       name: "Sleek Socket", 
-      logo: "/lovable-uploads/a9381e95-a719-4705-8e4d-0bcb9f07066c.png"
+      logo: "/lovable-uploads/5ed25aaa-6541-4418-bf6f-264ae94e48ec.png"
     }
   ];
 
