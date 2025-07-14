@@ -1,14 +1,11 @@
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
 const Footer = () => {
   const navigate = useNavigate();
-
   const handleLogoClick = () => {
     navigate('/');
     window.scrollTo(0, 0);
   };
-
   return <footer className="bg-gradient-to-b from-slate-800 to-slate-900 text-white py-16 px-4" style={{
     background: 'linear-gradient(to bottom, #1e293b, #0f172a)'
   }}>
@@ -57,9 +54,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-slate-600 mt-12 pt-8 text-center">
-          <p className="text-gray-400">
-            © 2024 Insty.cc. All rights reserved. Built with ❤️ for creators worldwide.
-          </p>
+          <p className="text-gray-400">© 2025 Insty.cc. All rights reserved. Built with ❤️ for creators worldwide.</p>
         </div>
       </div>
     </footer>;
