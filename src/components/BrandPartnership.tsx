@@ -1,44 +1,17 @@
 const BrandPartnership = () => {
   const brands = [
-    {
-      name: "Ulike",
-      logo: "/lovable-uploads/0a1af142-81ea-48cb-83b1-3faf570661cd.png"
-    },
-    {
-      name: "Bedsure", 
-      logo: "/lovable-uploads/13be0c64-7f7c-4835-8672-db9e77904401.png"
-    },
-    {
-      name: "Lovehoney",
-      logo: "/lovable-uploads/144cce7c-5cf5-4f74-bc20-e904c873c359.png"
-    },
-    {
-      name: "Gochifix",
-      logo: "/lovable-uploads/2f909d54-ba11-4ddd-bcbf-b05f22f7f063.png"
-    },
-    {
-      name: "Goli Nutrition",
-      logo: "/lovable-uploads/55226dff-1140-4e79-88da-8c9d1845b201.png"
-    },
-    {
-      name: "MiraHandCrafts",
-      logo: "/lovable-uploads/5ed25aaa-6541-4418-bf6f-264ae94e48ec.png"
-    },
-    {
-      name: "Auraglow",
-      logo: "/lovable-uploads/743ea6d2-3fa9-4831-97e9-597dc7ad2ecd.png"
-    },
-    {
-      name: "Aquasonic",
-      logo: "/lovable-uploads/7ebdba90-25b7-45c1-8069-26fe467a65c3.png"
-    },
-    {
-      name: "Sleek Socket", 
-      logo: "/lovable-uploads/a0f89544-afc5-48b5-ab21-8156927c12f2.png"
-    }
+    { name: "Ulike", logo: "/lovable-uploads/e5d1e55e-104e-460e-aaa4-912dda27ac48.png" },
+    { name: "Bedsure", logo: "/lovable-uploads/a6ed07b4-b23d-45a9-a652-c5966ffa5520.png" },
+    { name: "Lovehoney", logo: "/lovable-uploads/226aa9d6-48ff-498c-936f-e4ff3f20edba.png" },
+    { name: "Gochifix", logo: "/lovable-uploads/ea495264-f258-4024-afb1-85aa41d28730.png" },
+    { name: "Goli Nutrition", logo: "/lovable-uploads/be311546-0b8a-458f-af71-d0d2b75075b0.png" },
+    { name: "MiraGoods", logo: "/lovable-uploads/516ad7a5-3ddc-4101-b062-db9b7fee5a80.png" },
+    { name: "Auraglow", logo: "/lovable-uploads/7245346b-1841-4b3c-9c45-6253f6bbfe26.png" },
+    { name: "Sleek socket", logo: "/lovable-uploads/7782406e-dee2-440f-87b0-bd1013e29844.png" },
+    { name: "Aquasonic", logo: "/lovable-uploads/dbbf9ebe-c49b-43e6-b35a-d6c3081d720d.png" }
   ];
-
-  // Duplicate brands for seamless infinite scroll
+  
+  // Duplicate brands for seamless scrolling
   const duplicatedBrands = [...brands, ...brands];
   return <section className="py-20 px-4 bg-gradient-to-b from-transparent to-red-50/30">
       <div className="container mx-auto">
@@ -51,12 +24,12 @@ const BrandPartnership = () => {
           </p>
         </div>
 
-        <div className="relative overflow-hidden">
-          <div className="flex animate-scroll space-x-8">
+        <div className="overflow-hidden">
+          <div className="flex animate-scroll">
             {duplicatedBrands.map((brand, index) => (
-              <div key={index} className="flex-shrink-0 group cursor-pointer">
-                <div className="w-32 h-32 rounded-full bg-white shadow-lg border border-gray-100 flex items-center justify-center p-6 group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
-                  <img src={brand.logo} alt={`${brand.name} logo`} className="w-full h-full object-contain" />
+              <div key={index} className="flex-shrink-0 mx-4 group cursor-pointer">
+                <div className="w-32 h-32 rounded-full bg-white shadow-lg border border-gray-100 flex items-center justify-center p-4 group-hover:shadow-xl group-hover:scale-110 transition-all duration-300 overflow-hidden">
+                  <img src={brand.logo} alt={`${brand.name} logo`} className="w-full h-full object-cover rounded-full" />
                 </div>
                 <p className="text-center mt-3 text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
                   {brand.name}
@@ -67,7 +40,7 @@ const BrandPartnership = () => {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-muted-foreground">And 500+ more premium brands in our catalog</p>
+          <p className="text-muted-foreground">1000+ more global brands waiting for you</p>
         </div>
       </div>
     </section>;
