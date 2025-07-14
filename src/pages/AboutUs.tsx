@@ -10,9 +10,9 @@ const AboutUs = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4">
+      <section className="pt-32 pb-12 px-4">
         <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">About Insty</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Empowering creators to turn their passion into sustainable income through AI-powered monetization
@@ -22,7 +22,7 @@ const AboutUs = () => {
       </section>
 
       {/* Story Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg">
             <h2 className="text-3xl font-bold mb-8 text-center text-foreground">Our Story</h2>
