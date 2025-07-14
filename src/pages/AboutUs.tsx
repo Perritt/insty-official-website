@@ -13,69 +13,97 @@ const AboutUs = () => {
       <section className="pt-32 pb-12 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-relaxed pb-2 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">About Insty</h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Empowering creators to turn their passion into sustainable income through AI-powered monetization
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-relaxed pb-2 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">The Bio Link That Pays You Back</h1>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              It started with a simple frustration. Sarah, a beauty creator with 8,000 followers, was spending hours researching products to recommend to her audience, only to earn pennies from traditional affiliate programs.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Story Section */}
+      {/* Origin Story Section */}
       <section className="py-12 px-4">
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg">
-            <h2 className="text-3xl font-bold mb-8 text-center text-foreground">Our Story</h2>
-            
+          <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg mb-16">
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                It all started with two creators, <strong className="text-foreground">Sarah</strong> and <strong className="text-foreground">Mike</strong>. Sarah had built a loyal following of 50,000 beauty enthusiasts on Instagram, while Mike's tech reviews on YouTube reached hundreds of thousands of viewers. Despite their success in creating engaging content, they both faced the same frustrating challenge: <em className="text-accent">how to monetize their influence without compromising their authenticity</em>.
+                Meanwhile, her friend <strong className="text-foreground">Mike</strong>, a tech reviewer, watched his carefully curated product lists get buried in cluttered link-in-bio tools that looked more like spam than recommendations.
               </p>
               
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Sarah tried promoting random products for quick commissions, but her audience noticed the disconnect. Mike spent countless hours researching products to recommend, but the manual process was exhausting and inconsistent. Both creators realized they needed a solution that could automatically match their content with high-quality, relevant products that their audience would genuinely love.
-              </p>
-              
-              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                That's when the idea for <strong className="text-primary">Insty.cc</strong> was born. We envisioned an AI-powered platform that could understand a creator's niche, analyze their audience's preferences, and automatically curate high-commission products that felt natural and authentic to promote.
+              <p className="text-muted-foreground text-lg leading-relaxed mb-8 text-center text-xl font-semibold text-primary">
+                That's when we realized: creators needed more than just another bio link tool—they needed a smart partner.
               </p>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Mission Section */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold mb-6 text-foreground">Our Mission</h2>
+          {/* Why Insty Exists */}
+          <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-center text-foreground">Why Insty Exists</h2>
+            <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                We believe every creator deserves to earn sustainable income from their passion. Insty.cc combines the power of artificial intelligence with deep e-commerce integration to automatically identify and promote products that resonate with your audience.
+                In 2024, we set out to solve this problem by combining AI intelligence with creator monetization. Our mission was simple: help creators of <strong className="text-primary">ANY size</strong> turn their passion into sustainable income—without the complexity of managing inventory, negotiating deals, or hunting for the right products.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Our platform doesn't just create bio links – it creates intelligent, revenue-generating experiences that grow with your audience and adapt to market trends in real-time.
+                While tools like Linktree charged monthly fees (often putting them out of reach for smaller creators), we built <strong className="text-primary">Insty.cc</strong> to be completely free while actually helping you earn money.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg mb-16">
+            <h2 className="text-3xl font-bold mb-8 text-center text-foreground">How Insty Changes the Game</h2>
             
-            <div className="bg-card border border-border p-8 rounded-2xl shadow-lg">
-              <h3 className="text-2xl font-bold mb-4 text-center text-foreground">What We've Achieved</h3>
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">Creators Served</span>
-                  <span className="text-2xl font-bold text-primary">100,000+</span>
+            <div className="prose prose-lg max-w-none mb-8">
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                Unlike traditional bio links, Insty doesn't just display your content—it optimizes it for earnings.
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+                Our AI scans thousands of high-commission products from Amazon and top brands, then handpicks the best matches for your specific audience.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-background/50 p-6 rounded-xl border border-border/50">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="w-3 h-3 rounded-full bg-primary flex-shrink-0 mt-2"></div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">No fees, no limits</h4>
+                    <p className="text-muted-foreground">Free forever (while competitors charge $5-$24/month)</p>
+                  </div>
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">Revenue Generated</span>
-                  <span className="text-2xl font-bold text-primary">$50M+</span>
+              </div>
+              
+              <div className="bg-background/50 p-6 rounded-xl border border-border/50">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="w-3 h-3 rounded-full bg-primary flex-shrink-0 mt-2"></div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">AI does the heavy lifting</h4>
+                    <p className="text-muted-foreground">Learns your audience and auto-curates converting products</p>
+                  </div>
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">AI Recommendations</span>
-                  <span className="text-2xl font-bold text-primary">1M+</span>
+              </div>
+              
+              <div className="bg-background/50 p-6 rounded-xl border border-border/50">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="w-3 h-3 rounded-full bg-primary flex-shrink-0 mt-2"></div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Earn from day one</h4>
+                    <p className="text-muted-foreground">Nano-influencers like Sarah now make $500+/month</p>
+                  </div>
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">Success Rate</span>
-                  <span className="text-2xl font-bold text-primary">94%</span>
+              </div>
+              
+              <div className="bg-background/50 p-6 rounded-xl border border-border/50">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="w-3 h-3 rounded-full bg-primary flex-shrink-0 mt-2"></div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Grows with you</h4>
+                    <p className="text-muted-foreground">The more you use Insty, the smarter it gets</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -83,34 +111,62 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Values Section */}
-      <section className="py-20 px-4">
+      {/* Success Stories Section */}
+      <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold mb-12 text-center text-foreground">Our Values</h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-card border border-border p-6 rounded-xl text-center shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 gradient-button rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🎯</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-foreground">Authenticity</h3>
-              <p className="text-muted-foreground">We help creators maintain their authentic voice while maximizing revenue potential.</p>
-            </div>
+          <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg mb-16">
+            <h2 className="text-3xl font-bold mb-8 text-center text-foreground">From Side Hustle to Serious Income</h2>
             
-            <div className="bg-card border border-border p-6 rounded-xl text-center shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 gradient-button rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🚀</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-foreground">Innovation</h3>
-              <p className="text-muted-foreground">Cutting-edge AI technology that stays ahead of market trends and consumer behavior.</p>
+            <div className="prose prose-lg max-w-none mb-8">
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6 text-center">
+                Today, Insty powers <strong className="text-primary">100K+ creators</strong> worldwide, from 1K-follower artists to 500K lifestyle influencers.
+              </p>
             </div>
-            
-            <div className="bg-card border border-border p-6 rounded-xl text-center shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 gradient-button rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">💪</span>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary"></div>
+                  <span className="text-muted-foreground">Beauty creators earn 30% commissions on viral makeup</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary"></div>
+                  <span className="text-muted-foreground">Tech reviewers like Mike tripled earnings with AI-matched gadgets</span>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-foreground">Empowerment</h3>
-              <p className="text-muted-foreground">Every creator should have the tools to build a sustainable business from their content.</p>
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary"></div>
+                  <span className="text-muted-foreground">Travel bloggers monetize gear recommendations passively</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary"></div>
+                  <span className="text-muted-foreground">Even small artists generate sales without inventory</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center bg-background/50 p-6 rounded-xl border border-border/50">
+              <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+                We're a remote-first team of engineers, data scientists, and creator economy veterans obsessed with one mission: <strong className="text-primary">democratizing monetization</strong> so every creator—not just the top 1%—can profit from their influence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonial Section */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <div className="bg-card border border-border p-8 md:p-12 rounded-2xl shadow-lg text-center">
+            <div className="max-w-2xl mx-auto">
+              <div className="text-6xl mb-6">💬</div>
+              <blockquote className="text-2xl font-medium text-foreground mb-6 leading-relaxed">
+                "Insty turned my 8K following into $3,200/month. The AI knows my audience better than I do!"
+              </blockquote>
+              <cite className="text-muted-foreground text-lg">
+                — Sarah, <span className="text-primary">@BeautyBySarah</span>
+              </cite>
             </div>
           </div>
         </div>
@@ -120,12 +176,12 @@ const AboutUs = () => {
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="bg-card border border-border p-12 rounded-2xl shadow-lg">
-            <h2 className="text-3xl font-bold mb-6 text-foreground">Join Our Creator Community</h2>
+            <h2 className="text-4xl font-bold mb-6 text-foreground">Join the free bio link revolution.</h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Ready to transform your content into a revenue-generating machine? Join over 100,000 creators who trust Insty.cc to power their success.
+              Ready to transform your content into a revenue-generating machine? Start earning today with the bio link that pays you back.
             </p>
             <button className="gradient-button text-lg px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105">
-              Start Your Journey Today
+              Get Started Free
             </button>
           </div>
         </div>
