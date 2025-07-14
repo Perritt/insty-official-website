@@ -49,7 +49,7 @@ const HeroSection = () => {
           <div className="text-center lg:text-left">
             {/* Main Headlines */}
             <div className="mb-8">
-              <h1 className="text-4xl md:text-6xl lg:text-5xl xl:text-6xl font-bold mb-6 pb-2 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent animate-fade-in">Free Bio Link. Smart Storefront.
+              <h1 className="text-4xl md:text-6xl lg:text-5xl xl:text-6xl font-bold mb-6 pb-2 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent animate-fade-in">Free Bio Link. Smart Storefront. 
 Real Income.</h1>
               <div className="text-lg md:text-xl text-muted-foreground mb-4 animate-slide-up">
                 <p className="font-semibold text-red-600 mb-2">No offer&earning? No problem!</p>
