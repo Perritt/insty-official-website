@@ -74,8 +74,8 @@ const HeroSection = () => {
 
             {/* URL Input */}
             <div className="max-w-md mx-auto lg:mx-0 animate-slide-up">
-              <div className="flex items-center glass-card rounded-full p-2 gap-1">
-                <span className="text-muted-foreground px-3 shrink-0 text-sm">insty.cc/</span>
+              <div className="flex items-center glass-card rounded-full p-2">
+                <span className="text-muted-foreground pl-3 pr-1 shrink-0 text-sm">insty.cc/</span>
                 <Input 
                   value={username} 
                   onChange={e => {
