@@ -27,9 +27,9 @@ const BrandPartnership = () => {
         <div className="overflow-hidden">
           <div className="flex animate-scroll">
             {duplicatedBrands.map((brand, index) => (
-              <div key={index} className="flex-shrink-0 mx-8 group cursor-pointer">
-                <div className="w-32 h-32 rounded-full bg-white shadow-lg border border-gray-100 flex items-center justify-center p-6 group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
-                  <img src={brand.logo} alt={`${brand.name} logo`} className="w-full h-full object-contain" />
+              <div key={index} className="flex-shrink-0 mx-4 group cursor-pointer">
+                <div className="w-32 h-32 rounded-full bg-white shadow-lg border border-gray-100 flex items-center justify-center p-4 group-hover:shadow-xl group-hover:scale-110 transition-all duration-300 overflow-hidden">
+                  <img src={brand.logo} alt={`${brand.name} logo`} className="w-full h-full object-cover rounded-full" />
                 </div>
                 <p className="text-center mt-3 text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
                   {brand.name}
