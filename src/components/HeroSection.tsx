@@ -49,9 +49,8 @@ const HeroSection = () => {
           <div className="text-center lg:text-left">
             {/* Main Headlines */}
             <div className="mb-8">
-              <h1 className="text-4xl md:text-6xl lg:text-5xl xl:text-6xl font-bold mb-6 pb-2 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent animate-fade-in">
-                Free Bio Link. Smart Storefront. Real Income
-              </h1>
+              <h1 className="text-4xl md:text-6xl lg:text-5xl xl:text-6xl font-bold mb-6 pb-2 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent animate-fade-in">Free Bio Link. Smart Storefront.
+Real Income.</h1>
               <div className="text-lg md:text-xl text-muted-foreground mb-4 animate-slide-up">
                 <p className="font-semibold text-red-600 mb-2">No offer&earning? No problem!</p>
                 <p>
@@ -117,11 +116,7 @@ const HeroSection = () => {
           {/* Right Image */}
           <div className="flex justify-center lg:justify-end animate-fade-in">
             <div className="relative">
-              <img 
-                src="/lovable-uploads/0a1af142-81ea-48cb-83b1-3faf570661cd.png"
-                alt="Bio link storefront example"
-                className="w-full max-w-sm lg:max-w-md xl:max-w-lg h-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
-              />
+              <img src="/lovable-uploads/0a1af142-81ea-48cb-83b1-3faf570661cd.png" alt="Bio link storefront example" className="w-full max-w-sm lg:max-w-md xl:max-w-lg h-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300" />
               <div className="absolute -inset-4 bg-gradient-to-r from-orange-500/20 via-red-500/20 to-pink-500/20 rounded-3xl blur-xl opacity-50"></div>
             </div>
           </div>
