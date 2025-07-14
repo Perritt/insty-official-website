@@ -5,7 +5,7 @@ const BrandShowcase = () => {
       logo: "/lovable-uploads/7ebdba90-25b7-45c1-8069-26fe467a65c3.png"
     },
     {
-      name: "Bedsure", 
+      name: "Bedsure",
       logo: "/lovable-uploads/55226dff-1140-4e79-88da-8c9d1845b201.png"
     },
     {
@@ -33,7 +33,7 @@ const BrandShowcase = () => {
       logo: "/lovable-uploads/a0f89544-afc5-48b5-ab21-8156927c12f2.png"
     },
     {
-      name: "Sleek Socket", 
+      name: "Sleek Socket",
       logo: "/lovable-uploads/5ed25aaa-6541-4418-bf6f-264ae94e48ec.png"
     }
   ];
