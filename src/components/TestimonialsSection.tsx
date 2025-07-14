@@ -84,7 +84,7 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Auto-scrolling testimonials carousel */}
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden py-4">
           <div className="flex animate-scroll space-x-6">
             {[...testimonials, ...testimonials].map((testimonial, index) => <div key={`${testimonial.name}-${index}`} className="p-6 rounded-2xl hover:scale-105 transition-all duration-300 flex-shrink-0 w-80 bg-white/80 backdrop-blur-sm border-2 border-white/60 shadow-md">
                 <div className="flex items-center mb-4">
