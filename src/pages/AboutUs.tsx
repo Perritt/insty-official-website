@@ -1,9 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
 const AboutUs = () => {
-  return (
-    <div className="min-h-screen bg-background relative">
+  return <div className="min-h-screen bg-background relative">
       {/* Particle background - same as homepage */}
       <div className="particles-bg">
         <div className="absolute inset-0 bg-gradient-to-br from-orange-50/20 via-transparent to-red-50/20"></div>
@@ -15,9 +13,7 @@ const AboutUs = () => {
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
-              About Insty.cc
-            </h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">About Insty</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Empowering creators to turn their passion into sustainable income through AI-powered monetization
             </p>
@@ -136,8 +132,6 @@ const AboutUs = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default AboutUs;
