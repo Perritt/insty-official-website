@@ -13,8 +13,11 @@ const Footer = () => {
                 Insty.cc
               </h3>
             </div>
-            <p className="text-gray-300 mb-6 max-w-md">
+            <p className="text-gray-300 mb-4 max-w-md">
               The all-in-one platform for creators to monetize their audience with AI-powered bio links.
+            </p>
+            <p className="text-gray-400 text-sm mb-6">
+              📧 support@insty.cc
             </p>
             
             {/* Social Links */}
