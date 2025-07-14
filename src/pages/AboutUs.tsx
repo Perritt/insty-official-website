@@ -13,7 +13,7 @@ const AboutUs = () => {
       <section className="pt-32 pb-12 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">About Insty</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">About Insty</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Empowering creators to turn their passion into sustainable income through AI-powered monetization
             </p>
