@@ -86,7 +86,7 @@ const TestimonialsSection = () => {
         {/* Auto-scrolling testimonials carousel */}
         <div className="relative overflow-hidden">
           <div className="flex animate-scroll space-x-6">
-            {[...testimonials, ...testimonials].map((testimonial, index) => <div key={`${testimonial.name}-${index}`} className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 flex-shrink-0 w-80">
+            {[...testimonials, ...testimonials].map((testimonial, index) => <div key={`${testimonial.name}-${index}`} className="p-6 rounded-2xl hover:scale-105 transition-all duration-300 flex-shrink-0 w-80 bg-white/80 backdrop-blur-sm border border-white/20">
                 <div className="flex items-center mb-4">
                   <Avatar className="w-12 h-12 border-2 border-pink-300 mr-4">
                     <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
