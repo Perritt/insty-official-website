@@ -1,5 +1,14 @@
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate('/');
+    window.scrollTo(0, 0);
+  };
+
   return <footer className="bg-gradient-to-b from-slate-800 to-slate-900 text-white py-16 px-4" style={{
     background: 'linear-gradient(to bottom, #1e293b, #0f172a)'
   }}>
@@ -7,7 +16,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
+            <div className="flex items-center space-x-3 mb-4 cursor-pointer" onClick={handleLogoClick}>
               <img src="/lovable-uploads/144cce7c-5cf5-4f74-bc20-e904c873c359.png" alt="Insty.cc Logo" className="w-10 h-10" />
               <h3 className="text-xl font-bold pb-1 bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
                 Insty.cc
