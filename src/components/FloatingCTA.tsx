@@ -4,14 +4,14 @@ import { X } from "lucide-react";
 
 const FloatingCTA = () => {
   const [isVisible, setIsVisible] = useState(true);
-  const [creatorCount, setCreatorCount] = useState(14329);
+  const [creatorCount, setCreatorCount] = useState(94329);
   const [increment, setIncrement] = useState<number | null>(null);
   const [showBubble, setShowBubble] = useState(false);
 
   useEffect(() => {
     // Animate the creator count
     const interval = setInterval(() => {
-      const incrementValue = Math.floor(Math.random() * 3);
+      const incrementValue = Math.floor(Math.random() * 3) + 1;
       if (incrementValue > 0) {
         setCreatorCount(prev => prev + incrementValue);
         setIncrement(incrementValue);
