@@ -116,7 +116,7 @@ Real Income.</h1>
           {/* Right Image */}
           <div className="flex justify-center lg:justify-end animate-fade-in">
             <div className="relative">
-              <img src="/lovable-uploads/0a1af142-81ea-48cb-83b1-3faf570661cd.png" alt="Bio link storefront example" className="w-full max-w-sm lg:max-w-md xl:max-w-lg h-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300" />
+              <img src="/lovable-uploads/0a1af142-81ea-48cb-83b1-3faf570661cd.png" alt="Bio link storefront example" className="w-full max-w-xs lg:max-w-sm xl:max-w-md h-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300" />
               <div className="absolute -inset-4 bg-gradient-to-r from-orange-500/20 via-red-500/20 to-pink-500/20 rounded-3xl blur-xl opacity-50"></div>
             </div>
           </div>
