@@ -1,29 +1,18 @@
-import amazonLogo from "@/assets/brands/amazon-logo.png";
-import shopifyLogo from "@/assets/brands/shopify-logo.png";
-import alibabaLogo from "@/assets/brands/alibaba-logo.png";
-import ebayLogo from "@/assets/brands/ebay-logo.png";
-import etsyLogo from "@/assets/brands/etsy-logo.png";
-import walmartLogo from "@/assets/brands/walmart-logo.png";
 const BrandPartnership = () => {
-  const brands = [{
-    name: "Amazon",
-    logo: amazonLogo
-  }, {
-    name: "Shopify",
-    logo: shopifyLogo
-  }, {
-    name: "Alibaba",
-    logo: alibabaLogo
-  }, {
-    name: "eBay",
-    logo: ebayLogo
-  }, {
-    name: "Etsy",
-    logo: etsyLogo
-  }, {
-    name: "Walmart",
-    logo: walmartLogo
-  }];
+  const brands = [
+    { name: "Ulike", logo: "/lovable-uploads/e5d1e55e-104e-460e-aaa4-912dda27ac48.png" },
+    { name: "Bedsure", logo: "/lovable-uploads/a6ed07b4-b23d-45a9-a652-c5966ffa5520.png" },
+    { name: "Lovehoney", logo: "/lovable-uploads/226aa9d6-48ff-498c-936f-e4ff3f20edba.png" },
+    { name: "Gochifix", logo: "/lovable-uploads/ea495264-f258-4024-afb1-85aa41d28730.png" },
+    { name: "Goli", logo: "/lovable-uploads/be311546-0b8a-458f-af71-d0d2b75075b0.png" },
+    { name: "Mira", logo: "/lovable-uploads/516ad7a5-3ddc-4101-b062-db9b7fee5a80.png" },
+    { name: "Auraglow", logo: "/lovable-uploads/7245346b-1841-4b3c-9c45-6253f6bbfe26.png" },
+    { name: "Sleek", logo: "/lovable-uploads/7782406e-dee2-440f-87b0-bd1013e29844.png" },
+    { name: "Aquasonic", logo: "/lovable-uploads/dbbf9ebe-c49b-43e6-b35a-d6c3081d720d.png" }
+  ];
+  
+  // Duplicate brands for seamless scrolling
+  const duplicatedBrands = [...brands, ...brands];
   return <section className="py-20 px-4 bg-gradient-to-b from-transparent to-red-50/30">
       <div className="container mx-auto">
         <div className="text-center mb-12">
@@ -35,15 +24,19 @@ const BrandPartnership = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
-          {brands.map((brand, index) => <div key={index} className="group cursor-pointer">
-              <div className="w-32 h-32 rounded-full bg-white shadow-lg border border-gray-100 flex items-center justify-center p-6 group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
-                <img src={brand.logo} alt={`${brand.name} logo`} className="w-full h-full object-contain" />
+        <div className="overflow-hidden">
+          <div className="flex animate-scroll">
+            {duplicatedBrands.map((brand, index) => (
+              <div key={index} className="flex-shrink-0 mx-8 group cursor-pointer">
+                <div className="w-32 h-32 rounded-full bg-white shadow-lg border border-gray-100 flex items-center justify-center p-6 group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
+                  <img src={brand.logo} alt={`${brand.name} logo`} className="w-full h-full object-contain" />
+                </div>
+                <p className="text-center mt-3 text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
+                  {brand.name}
+                </p>
               </div>
-              <p className="text-center mt-3 text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
-                {brand.name}
-              </p>
-            </div>)}
+            ))}
+          </div>
         </div>
 
         <div className="text-center mt-12">
