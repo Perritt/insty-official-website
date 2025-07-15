@@ -50,7 +50,9 @@ const HeroSection = () => {
             {/* Main Headlines */}
             <div className="space-y-6">
               <h1 className="text-3xl md:text-5xl lg:text-4xl xl:text-5xl font-bold leading-tight pb-2 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent animate-fade-in">
-                Free Bio Link. Smart Storefront. Real Income.
+                Free Bio Link.<br />
+                Smart Storefront.<br />
+                Real Income.
               </h1>
               <div className="text-base md:text-lg text-muted-foreground space-y-3 animate-slide-up">
                 <p className="font-semibold text-red-600">No offer & earning? No problem!</p>
