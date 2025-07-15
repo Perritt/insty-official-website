@@ -131,11 +131,11 @@ const ProductShowcase = () => {
                     alt={product.title}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded-md p-1">
+                  <div className="absolute top-2 right-2 bg-white/95 backdrop-blur-sm rounded-md p-1.5 shadow-sm">
                     <img 
                       src={amazonLogo} 
                       alt="Amazon" 
-                      className="w-4 h-4 object-contain"
+                      className="w-6 h-6 object-contain"
                     />
                   </div>
                 </div>
