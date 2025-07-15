@@ -39,7 +39,7 @@ const HeroSection = () => {
     color: "text-green-600"
   }];
   const earnings = ["@MiniTraveler just earned $82.40", "@TechReviewer earned $156.20", "@FoodieBlogger made $94.80", "@FitnessGuru earned $127.60", "@BeautyInfluencer made $203.50"];
-  return <section className="relative min-h-screen flex items-center justify-center px-4 pt-16 pb-16">
+  return <section className="relative min-h-screen flex items-center justify-center px-4 pt-24 pb-16">
       {/* Animated Background */}
       <div className="absolute inset-0 gradient-animate opacity-10"></div>
       
