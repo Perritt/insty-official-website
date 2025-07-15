@@ -150,7 +150,7 @@ const ProductShowcase = () => {
                     ))}
                   </div>
                   <span className="ml-2 text-xs text-gray-600">
-                    {product.rating}
+                    {product.rating} ({product.reviews.toLocaleString()})
                   </span>
                 </div>
                 
