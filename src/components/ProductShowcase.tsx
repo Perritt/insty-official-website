@@ -115,13 +115,16 @@ const ProductShowcase = () => {
 
         {/* Auto-scrolling product carousel */}
         <div className="relative overflow-hidden">
-          <div className="flex animate-scroll space-x-6">
+          <div className="flex animate-scroll space-x-4">
             {[...products, ...products].map((product, index) => (
-              <div 
+              <a
                 key={`${product.id}-${index}`}
-                className="flex-shrink-0 w-64 glass-card p-6 rounded-2xl hover:scale-105 transition-transform"
+                href={product.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-shrink-0 w-64 bg-white/80 backdrop-blur-sm border border-white/20 shadow-lg p-4 rounded-xl hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer"
               >
-                <div className="aspect-square mb-4 overflow-hidden rounded-xl">
+                <div className="aspect-square mb-3 overflow-hidden rounded-lg">
                   <img 
                     src={product.image} 
                     alt={product.title}
@@ -129,16 +132,16 @@ const ProductShowcase = () => {
                   />
                 </div>
                 
-                <h3 className="font-semibold text-lg mb-2 line-clamp-2">
+                <h3 className="font-semibold text-base mb-2 line-clamp-2 text-gray-900">
                   {product.title}
                 </h3>
                 
-                <div className="flex items-center mb-3">
+                <div className="flex items-center mb-2">
                   <div className="flex items-center space-x-1">
                     {[...Array(5)].map((_, i) => (
                       <Star 
                         key={i} 
-                        className={`w-4 h-4 ${
+                        className={`w-3 h-3 ${
                           i < Math.floor(product.rating) 
                             ? 'text-yellow-400 fill-current' 
                             : 'text-gray-300'
@@ -146,30 +149,30 @@ const ProductShowcase = () => {
                       />
                     ))}
                   </div>
-                  <span className="ml-2 text-sm text-muted-foreground">
+                  <span className="ml-2 text-xs text-gray-600">
                     {product.rating}
                   </span>
                 </div>
                 
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center space-x-2">
-                    <div className="w-6 h-6 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center">
+                    <div className="w-5 h-5 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center">
                       <span className="text-xs font-bold text-white">
                         {product.brand.charAt(0)}
                       </span>
                     </div>
-                    <span className="text-sm font-medium">{product.brand}</span>
+                    <span className="text-xs font-medium text-gray-700">{product.brand}</span>
                   </div>
-                  <div className="text-sm font-bold text-green-600">
+                  <div className="text-xs font-bold text-green-600">
                     {product.commission}
                   </div>
                 </div>
                 
-                <div className="flex items-center justify-between text-sm">
-                  <span className="text-muted-foreground">Price: {product.price}</span>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-gray-600">Price: {product.price}</span>
                   <span className="font-semibold text-green-600">Earn: {product.earnings}</span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
