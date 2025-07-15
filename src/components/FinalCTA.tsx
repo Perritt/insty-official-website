@@ -28,10 +28,12 @@ const FinalCTA = () => {
             Launch My Free Storefront
           </Button>
 
-          <div className="mt-8 space-y-2 text-left">
-            <p className="text-lg opacity-90">✅ No credit card required</p>
-            <p className="text-lg opacity-90">✅ Set up in under 60 seconds</p>
-            <p className="text-lg opacity-90">✅ Start earning immediately</p>
+          <div className="mt-8 space-y-2 flex flex-col items-center">
+            <div className="text-left">
+              <p className="text-lg opacity-90">✅ No credit card required</p>
+              <p className="text-lg opacity-90">✅ Set up in under 60 seconds</p>
+              <p className="text-lg opacity-90">✅ Start earning immediately</p>
+            </div>
           </div>
         </div>
       </div>
