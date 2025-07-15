@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import amazonLogo from "../assets/amazon-logo.png";
 
 const ProductShowcase = () => {
   const products = [
@@ -122,8 +123,17 @@ const ProductShowcase = () => {
                 href={product.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-shrink-0 w-64 bg-white/80 backdrop-blur-sm border border-white/20 shadow-lg p-4 rounded-xl hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer"
+                className="flex-shrink-0 w-64 bg-white/80 backdrop-blur-sm border border-white/20 shadow-lg p-4 rounded-xl hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer relative"
               >
+                {/* Amazon Logo */}
+                <div className="absolute top-2 right-2 z-10">
+                  <img 
+                    src={amazonLogo} 
+                    alt="Amazon" 
+                    className="w-8 h-6 object-contain bg-white/90 rounded px-1 py-0.5 shadow-sm"
+                  />
+                </div>
+                
                 <div className="aspect-square mb-3 overflow-hidden rounded-lg">
                   <img 
                     src={product.image} 
