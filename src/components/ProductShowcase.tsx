@@ -1,49 +1,102 @@
 import { Star } from "lucide-react";
 
 const ProductShowcase = () => {
-  // Placeholder products - user will upload real ones later
   const products = [
     {
       id: 1,
-      title: "Premium Wireless Earbuds",
-      rating: 4.8,
-      brand: "TechBrand",
-      image: "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=200&h=200&fit=crop"
+      title: "Apple Cider Vinegar",
+      rating: 4.4,
+      brand: "Goli Nutrition",
+      image: "/lovable-uploads/d7885316-64c9-4662-986b-612b1a151ae2.png",
+      link: "https://www.amazon.com/dp/B07R8GD47V",
+      price: "$14.98",
+      commission: "20%",
+      earnings: "$2.99",
+      reviews: 365464
     },
     {
       id: 2,
-      title: "Organic Skincare Set",
-      rating: 4.9,
-      brand: "BeautyPro",
-      image: "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=200&h=200&fit=crop"
+      title: "Bedsure Comforter Duvet Insert",
+      rating: 4.7,
+      brand: "Bedsure",
+      image: "/lovable-uploads/2f55213d-99e6-4975-bc94-eb6cc0e4bb75.png",
+      link: "https://www.amazon.com/dp/B0CV77JNTQ",
+      price: "$55",
+      commission: "8%",
+      earnings: "$4.4",
+      reviews: 71617
     },
     {
       id: 3,
-      title: "Smart Fitness Tracker",
-      rating: 4.7,
-      brand: "FitTech",
-      image: "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=200&h=200&fit=crop"
+      title: "HandCrafts Crochet",
+      rating: 4.2,
+      brand: "MiraHandCrafts",
+      image: "/lovable-uploads/3e8a0797-5238-4a02-86a6-c74201cb8a69.png",
+      link: "https://www.amazon.com/dp/B017OULYD0",
+      price: "$21",
+      commission: "28%",
+      earnings: "$5.9",
+      reviews: 10839
     },
     {
       id: 4,
-      title: "Eco-Friendly Water Bottle",
-      rating: 4.6,
-      brand: "EcoLife",
-      image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=200&h=200&fit=crop"
+      title: "Random Orbit Sander",
+      rating: 4.9,
+      brand: "Gochifix",
+      image: "/lovable-uploads/9b373057-2ba7-4474-9bf0-ca003d3899ed.png",
+      link: "https://www.amazon.com/dp/B09W22PLZL",
+      price: "$45",
+      commission: "12%",
+      earnings: "$5.4",
+      reviews: 11
     },
     {
       id: 5,
-      title: "Premium Coffee Beans",
-      rating: 4.9,
-      brand: "BrewMaster",
-      image: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=200&h=200&fit=crop"
+      title: "Series Ultra Whitening Toothbrush",
+      rating: 4.6,
+      brand: "Aquasonic",
+      image: "/lovable-uploads/7020a6b2-5a6b-43ac-9053-b11f18cfd0ab.png",
+      link: "https://www.amazon.com/dp/B072YVWBXH",
+      price: "$36",
+      commission: "40%",
+      earnings: "$14.4",
+      reviews: 123007
     },
     {
       id: 6,
-      title: "Minimalist Desk Lamp",
-      rating: 4.5,
-      brand: "DesignHub",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop"
+      title: "Teeth Whitening Pen",
+      rating: 3.9,
+      brand: "Auraglow",
+      image: "/lovable-uploads/e4895812-310f-4b4d-883c-fa26a71c5cde.png",
+      link: "https://www.amazon.com/dp/B0C6QZRTQH",
+      price: "$22",
+      commission: "24%",
+      earnings: "$5.2",
+      reviews: 12199
+    },
+    {
+      id: 7,
+      title: "Ulike Laser Hair Removal",
+      rating: 4.2,
+      brand: "Ulike",
+      image: "/lovable-uploads/ecf4181e-04e2-4f60-aea8-27003adfc51a.png",
+      link: "https://www.amazon.com/dp/B0BXPDTJRR",
+      price: "$198",
+      commission: "20%",
+      earnings: "$39.6",
+      reviews: 2628
+    },
+    {
+      id: 8,
+      title: "Ultra-Thin Outlet Concealer",
+      rating: 4.7,
+      brand: "Sleek socket",
+      image: "/lovable-uploads/3a7ee2ff-6e84-4682-bdc3-5d09449e2063.png",
+      link: "https://www.amazon.com/dp/B0CHN6NFCQ",
+      price: "$25",
+      commission: "20%",
+      earnings: "$5.0",
+      reviews: 57577
     }
   ];
 
@@ -98,7 +151,7 @@ const ProductShowcase = () => {
                   </span>
                 </div>
                 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center space-x-2">
                     <div className="w-6 h-6 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center">
                       <span className="text-xs font-bold text-white">
@@ -108,8 +161,13 @@ const ProductShowcase = () => {
                     <span className="text-sm font-medium">{product.brand}</span>
                   </div>
                   <div className="text-sm font-bold text-green-600">
-                    Up to 30%
+                    {product.commission}
                   </div>
+                </div>
+                
+                <div className="flex items-center justify-between text-sm">
+                  <span className="text-muted-foreground">Price: {product.price}</span>
+                  <span className="font-semibold text-green-600">Earn: {product.earnings}</span>
                 </div>
               </div>
             ))}
