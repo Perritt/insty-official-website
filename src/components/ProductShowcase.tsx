@@ -177,15 +177,15 @@ const ProductShowcase = () => {
           </div>
         </div>
 
-        <div className="text-center mt-4 pt-6 border-t border-white/10">
-          <p className="text-muted-foreground mb-3 text-sm">
+        <div className="text-center mt-8">
+          <p className="text-muted-foreground mb-4">
             20,000+ products across all categories
           </p>
           <div className="flex flex-wrap justify-center gap-2">
             {["Beauty", "Tech", "Fashion", "Home", "Fitness", "Food", "Travel", "Books"].map((category) => (
               <span 
                 key={category}
-                className="px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-xs border border-white/20 hover:bg-white/20 transition-colors"
+                className="px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-sm border border-white/20"
               >
                 {category}
               </span>
