@@ -4,7 +4,7 @@ import { X } from "lucide-react";
 
 const FloatingCTA = () => {
   const [isVisible, setIsVisible] = useState(true);
-  const [creatorCount, setCreatorCount] = useState(94329);
+  const [creatorCount, setCreatorCount] = useState(100689);
   const [increment, setIncrement] = useState<number | null>(null);
   const [showBubble, setShowBubble] = useState(false);
 
