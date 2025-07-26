@@ -119,7 +119,7 @@ const AboutUs = () => {
             
             <div className="prose prose-lg max-w-none mb-8">
               <p className="text-muted-foreground text-lg leading-relaxed mb-6 text-center">
-                Today, Insty powers <strong className="text-primary">100K+ creators</strong> worldwide, from 1K-follower artists to 500K lifestyle influencers.
+                Today, Insty powers <strong className="text-primary">10K+ creators</strong> worldwide, from 1K-follower artists to 500K lifestyle influencers.
               </p>
             </div>
 
