@@ -66,27 +66,20 @@ const HeroSection = () => {
 
             {/* Advantages Grid */}
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 animate-fade-in">
-              {advantages.map((advantage, index) => 
-                <div key={index} className="glass-card p-3 rounded-xl hover:scale-105 transition-transform">
+              {advantages.map((advantage, index) => <div key={index} className="glass-card p-3 rounded-xl hover:scale-105 transition-transform">
                   <advantage.icon className={`w-4 h-4 ${advantage.color} mx-auto lg:mx-0 mb-2`} />
                   <p className="text-xs font-medium leading-tight">{advantage.text}</p>
-                </div>
-              )}
+                </div>)}
             </div>
 
             {/* URL Input */}
             <div className="max-w-md mx-auto lg:mx-0 animate-slide-up">
               <div className="flex items-center glass-card rounded-full p-2">
                 <span className="text-muted-foreground pl-3 pr-1 shrink-0 text-sm">insty.cc/</span>
-                <Input 
-                  value={username} 
-                  onChange={e => {
-                    setUsername(e.target.value);
-                    setIsTyping(false);
-                  }} 
-                  placeholder={username ? "" : `${typewriterText}${isTyping ? '|' : ''}`} 
-                  className="border-0 bg-transparent text-left flex-1 min-w-0 typewriter text-sm mr-3" 
-                />
+                <Input value={username} onChange={e => {
+                setUsername(e.target.value);
+                setIsTyping(false);
+              }} placeholder={username ? "" : `${typewriterText}${isTyping ? '|' : ''}`} className="border-0 bg-transparent text-left flex-1 min-w-0 typewriter text-sm mr-3" />
                 <Button className="gradient-button rounded-full px-4 shrink-0 text-sm font-medium">
                   Start
                 </Button>
@@ -96,7 +89,7 @@ const HeroSection = () => {
             {/* Trust Elements */}
             <div className="grid grid-cols-3 gap-4 animate-fade-in">
               <div className="text-center lg:text-left">
-                <div className="text-xl lg:text-2xl font-bold text-primary">100,000+</div>
+                <div className="text-xl lg:text-2xl font-bold text-primary">10,000+</div>
                 <div className="text-muted-foreground text-xs lg:text-sm">Active Creators</div>
               </div>
               <div className="text-center lg:text-left">
@@ -112,17 +105,13 @@ const HeroSection = () => {
             {/* Earnings Ticker */}
             <div className="overflow-hidden whitespace-nowrap bg-white/5 rounded-full py-2">
               <div className="inline-block animate-[scroll_20s_linear_infinite]">
-                {earnings.map((earning, index) => 
-                  <span key={index} className="text-sm text-muted-foreground mx-6">
+                {earnings.map((earning, index) => <span key={index} className="text-sm text-muted-foreground mx-6">
                     💰 {earning}
-                  </span>
-                )}
+                  </span>)}
                 {/* Duplicate for seamless loop */}
-                {earnings.map((earning, index) => 
-                  <span key={`duplicate-${index}`} className="text-sm text-muted-foreground mx-6">
+                {earnings.map((earning, index) => <span key={`duplicate-${index}`} className="text-sm text-muted-foreground mx-6">
                     💰 {earning}
-                  </span>
-                )}
+                  </span>)}
               </div>
             </div>
           </div>
@@ -130,11 +119,7 @@ const HeroSection = () => {
           {/* Right Image */}
           <div className="lg:col-span-2 flex justify-center lg:justify-center animate-fade-in">
             <div className="relative w-full max-w-sm lg:max-w-none">
-              <img 
-                src="/lovable-uploads/0a1af142-81ea-48cb-83b1-3faf570661cd.png" 
-                alt="Bio link storefront example" 
-                className="w-full h-auto rounded-2xl lg:rounded-3xl shadow-2xl transform hover:scale-105 transition-all duration-300" 
-              />
+              <img src="/lovable-uploads/0a1af142-81ea-48cb-83b1-3faf570661cd.png" alt="Bio link storefront example" className="w-full h-auto rounded-2xl lg:rounded-3xl shadow-2xl transform hover:scale-105 transition-all duration-300" />
               <div className="absolute -inset-3 lg:-inset-4 bg-gradient-to-r from-orange-500/20 via-red-500/20 to-pink-500/20 rounded-2xl lg:rounded-3xl blur-xl opacity-50 -z-10"></div>
             </div>
           </div>
